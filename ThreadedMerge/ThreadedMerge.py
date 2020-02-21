@@ -89,4 +89,7 @@ for num in num_threads:
     timesPerThread.append(statistics.mean(timer))
 
 plt.plot([1, 2, 4, 8], timesPerThread)
+plt.xlabel("Threads")
+plt.ylabel("Time in seconds")
+plt.xticks([1, 2, 4, 8])
 plt.show()
